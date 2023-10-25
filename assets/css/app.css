@@ -94,6 +94,7 @@ ul.nav-tabs li img
 {
     margin-top: 10px;
     margin-bottom: 10px;
+    width: 50px !important;
 }
 
 li a#prompts-tab img {
