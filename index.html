@@ -23,27 +23,35 @@
     <meta name="twitter:url" content="https://aotearoaai.org/" />
     <meta name="twitter:image" content="https://aotearoaai.org/assets/img/social.png" /> <!-- Replace with the URL of an image you want to use for sharing -->
 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sulphur+Point&display=swap" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kulim+Park:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400&display=swap" rel="stylesheet">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
     <!-- Custom Styles -->
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/app.css">
 </head>
 <body>
-
     <header class="bg-primary text-white text-center py-5">
-        <h1>Kia ora</h1>
-        <h2>Open Source AI assets created for Aotearoa New Zealand.</h2>
-    </header>
 
-    <section class="container my-5">
-        <h2>About the Project</h2>
-        <p>
+          <div class="content container">
+            <h1>Kia ora</h1>
+            <p class="lead">
             Here at AI in Aotearoa, we envision a future where artificial intelligence (AI) is leveraged to benefit our communities,
             our whenua (land), and our unique cultural heritage. This project is born out of a desire to create AI assets
             that are tailored to our distinct New Zealand context. These assets include classifications, models, vectors,
             and prompts that can be used by our citizens and mana whenua (people of the land).
         </p>
+
+
+          </div>
+
+    </header>
+
+    <section class="container my-5">
+        <h2>Open Source AI assets for Aotearoa New Zealand.</h2>
         <p>
             Our aim is to foster an open-source ecosystem where knowledge and resources are shared freely, empowering individuals
             and communities across our nation to harness the potential of AI. Whether you are a developer, a researcher, or simply
@@ -51,44 +59,64 @@
         </p>
     </section>
 
-    <section class="container my-5">
-    <h2>Showcase</h2>
-    <div class="row">
-        <!-- Prompts -->
-        <div class="col-lg-4 col-md-6 my-3">
+
+
+    <section class="content container">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <a class="nav-link active d-flex flex-column align-items-center" id="prompts-tab" data-bs-toggle="tab" href="#prompts" role="tab" aria-controls="prompts" aria-selected="true">
+                    <img src="assets/img/icons/prompts.png" alt="Prompts" class="img-fluid">
+                    <h3>Prompts</h3>
+                    <span>Discover a range of AI prompts tailored for Aotearoa NZ law, culture, and environment aiding in generating value for New Zealand.</span>
+                </a>
+                </a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link d-flex flex-column align-items-center" id="classifications-tab" data-bs-toggle="tab" href="#classifications" role="tab" aria-controls="classifications" aria-selected="false">
+                    <img src="assets/img/icons/classifications.png" alt="Classifications" class="img-fluid">
+                    <h3>Classifications</h3>
+                    <span>Utilise pre-built classification models to sort and analyse data in a way that's meaningful to our communities.</span>
+                </a>
+                </a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link d-flex flex-column align-items-center" id="assets-tab" data-bs-toggle="tab" href="#assets" role="tab" aria-controls="assets" aria-selected="false">
+                    <img src="assets/img/icons/assets.png" alt="Assets" class="img-fluid">
+                    <h3>Assets</h3>
+                    <span>Access a repository of vectors, models, and other AI assets developed with Aotearoa's unique needs in mind.</span>
+                </a>
+            </li>
+        </ul>
+
+
+      <div class="tab-content" id="content">
+        <div class="tab-pane fade show active" id="prompts" role="tabpanel" aria-labelledby="prompts-tab">
             <div class="card">
-                <img src="prompts.jpg" class="card-img-top" alt="Prompts">
                 <div class="card-body">
-                    <h5 class="card-title">Prompts</h5>
-                    <p class="card-text">Discover a range of AI prompts tailored for Aotearoa NZ law, culture, and environment aiding in generating value for New Zealand.</p>
-                    <a href="prompts.html" class="btn btn-primary">Explore Prompts</a>
+                    <a href="https://github.com/AI-in-Aotearoa/prompts-chatgpt" class="btn btn-primary">View ChatGPT Prompts in Aotearoa New Zealand Context</a>
                 </div>
             </div>
         </div>
-        <!-- Classifications -->
-        <div class="col-lg-4 col-md-6 my-3">
+        <div class="tab-pane fade" id="classifications" role="tabpanel" aria-labelledby="classifications-tab">
             <div class="card">
-                <img src="classifications.jpg" class="card-img-top" alt="Classifications">
                 <div class="card-body">
-                    <h5 class="card-title">Classifications</h5>
-                    <p class="card-text">Utilise pre-built classification models to sort and analyse data in a way that's meaningful to our communities.</p>
-                     <a href="#" class="btn btn-primary disabled" aria-disabled="true">Explore Classifications</a>
+                    <p>Currently in development, if you want to get involved please <a href="mailto:hello@aotearoaai.org">get in touch</a></p>
                 </div>
             </div>
         </div>
-        <!-- Assets -->
-        <div class="col-lg-4 col-md-6 my-3">
+        <div class="tab-pane fade" id="assets" role="tabpanel" aria-labelledby="assets-tab">
             <div class="card">
-                <img src="assets.jpg" class="card-img-top" alt="Assets">
-                <div class="card-body">
-                    <h5 class="card-title">Assets</h5>
-                    <p class="card-text">Access a repository of vectors, models, and other AI assets developed with Aotearoa's unique needs in mind.</p>
-                    <a href="#" class="btn btn-primary disabled" aria-disabled="true">Explore Assets</a
-                </div>
+                 <div class="card-body">
+                    <p>Currently in development, if you want to get involved please <a href="mailto:hello@aotearoaai.org">get in touch</a></p>
+                 </div>
+
             </div>
         </div>
-    </div>
-</section>
+
+    </section>
+
+
+
 
     <section class="container my-5">
         <h2>Get Involved</h2>
@@ -114,6 +142,7 @@
     <!-- Bootstrap JS (Optional) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Custom Script -->
-    <script src="assets/js/script.js"></script>
+    <script src="assets/js/app.js"></script>
+
 </body>
 </html>
