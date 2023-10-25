@@ -25,14 +25,10 @@ a, .nav-link, .nav-link:hover {
 
 .bg-primary, .btn-primary
 {
-    background-color: #00B399 !important;
+    background-color: #79A9A0 !important;
 
 }
 
-.bg-primary
-{
-    background: #00B399;
-}
 
 .bg-primary h1
 {
@@ -47,29 +43,7 @@ a, .nav-link, .nav-link:hover {
     font-weight: 400  !important;
 }
 
-header
-{
 
-  position: relative;
-}
-
-header img
-{
-  opacity: 0.05;
-  position: absolute;
-  left: 0;
-  top: 0%;
-    margin-bottom: 0%;
-  width: 100%;
-  height: auto;
-}
-
-header .content
-{
-
-  position: relative;
-
-}
 /* Secondary Color Elements */
 .secondary-text {
     color: #934C3D;
@@ -114,4 +88,16 @@ li a#assets-tab img {
 .tab-description {
     font-size: 0.8rem;
     color: #777;
+}
+
+
+.content, .image-container {
+    margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+    .image-container {
+        flex-shrink: 0;
+        width: 30%; /* or whatever width you desire */
+    }
 }
